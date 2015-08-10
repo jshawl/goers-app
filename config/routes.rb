@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root to: 'artists#index'
 
   get "myartists" => "artists#myartists"
+  # could also do resources for myartists to have full CRUD
 
   resources :artists do
     resources :images

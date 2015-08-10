@@ -1,5 +1,6 @@
 class ArtistsController < ApplicationController
   before_action :set_artist, only: [:show, :edit, :update, :destroy]
+  # excellent use of callbacks here!
   before_action :authenticate_user!, only: [:create, :edit, :update, :destroy]
 
   #index
@@ -12,6 +13,7 @@ class ArtistsController < ApplicationController
   end
 
   def myartists
+    # excellent use of a custom method in the controller.
     @artists = current_user.artists.order('name ASC')
   end
 
@@ -46,7 +48,7 @@ class ArtistsController < ApplicationController
   #destroy
   def destroy
 
-    @artist.destroy
+    @artist.destroy # if @artist.user == current_user
     redirect_to artists_path
   end
 

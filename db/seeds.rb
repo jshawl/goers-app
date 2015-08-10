@@ -18,3 +18,4 @@ artists = Artist.create([
 
 Image.create( date: '11/08/2015', venue: 'Red Hat Amphitheater', location: 'Raleigh, NC', photo_url: 'http://i.telegraph.co.uk/multimedia/archive/02719/arctic-monkeys-2_2719207b.jpg', artist_id: artists[0].id)
 # Image.create( date: '11/15/2011', venue: 'PNC Arena', location: 'Raleigh, NC', photo_url: 'https://arcticmonkeysnews.files.wordpress.com/2012/01/arctic_monkeys_by_andy_willsher_lccc_july_200701_website_image_ying_standard.jpg', artist_id: artists[0].id)
+# I recommend creating some more seed data with users and demonstrating the "My artists" functionality, but otherwise these seeds look great!

@@ -20,6 +20,7 @@ h1 {
   background: #ffff00;
   padding:1em;
   background-image: url("bg.jpg");
+  /* or use asset_path: http://guides.rubyonrails.org/asset_pipeline.html#css-and-erb */
   background-repeat: repeat-x;
 }
 

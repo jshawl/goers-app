@@ -6,6 +6,11 @@
 
 
   <%= link_to (image_tag artist.photo_url, class: 'artistPhoto', alt: "Photo of #{artist.name}" ), artist_path(artist) %>
+  <!-- you can also open a block in a link_to, like:
+  <%= link_to "text", some_path do %>
+    <% image_tag ... %>
+  <% end %>
+  -->
   <%= link_to artist.name, artist_path(artist), class: "nameDisplay" %>
 
 </div>
